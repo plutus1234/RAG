@@ -9,3 +9,4 @@ torch
 playwright
 beautifulsoup4
 pysqlite3-binary==0.5.1
+--upgrade pip
