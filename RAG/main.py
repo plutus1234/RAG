@@ -12,6 +12,10 @@ from bs4 import BeautifulSoup
 import time
 import re
 from playwright.sync_api import sync_playwright
+import sqlite3
+print(f"SQLite version: {sqlite3.sqlite_version}") 
+import chromadb
+from sentence_transformers import SentenceTransformer
 
 # --- Configuration ---
 load_dotenv()
