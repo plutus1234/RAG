@@ -1,3 +1,19 @@
+# MUST BE ABSOLUTE FIRST LINES - BEFORE ANY IMPORTS
+import sys
+import os
+
+# Force pysqlite3 to take precedence over system SQLite
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+# Verify SQLite version
+import sqlite3
+print(f"SQLite version in use: {sqlite3.sqlite_version}")  # Debug check
+
+# Now proceed with other imports
+import chromadb
+from sentence_transformers import SentenceTransformer
+
 import os
 import pandas as pd
 import streamlit as st
