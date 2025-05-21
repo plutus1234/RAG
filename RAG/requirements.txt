@@ -1,5 +1,4 @@
 sentence-transformers>=2.2.2
-pysqlite3<=0.5.4
 chromadb>=0.4.0
 groq>=0.3.0
 pypdf2>=3.0.0
@@ -9,3 +8,4 @@ pandas>=2.0.0
 torch>=2.0.0
 playwright>=1.40.0
 beautifulsoup4>=4.12.2
+pysqlite3-binary
